@@ -14,7 +14,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User 
 {
 	@Id
@@ -25,11 +25,11 @@ public class User
 	private String uemail;
 	private String upassword;
 	private Long unumber;
-	
+
 @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
 	private List<Orders> orders;
-	
-	
+
+
 	public User() {
 
 }
@@ -75,7 +75,7 @@ public class User
 		return "User [u_id=" + u_id + ", uname=" + uname + ", uemail=" + uemail + ", upassword=" + upassword
 				+ ", unumber=" + unumber + ", orders=" + orders + "]";
 	}
-	
+
 
 	 public User(String uemail, String upassword) {
 	        this.uemail = uemail;
