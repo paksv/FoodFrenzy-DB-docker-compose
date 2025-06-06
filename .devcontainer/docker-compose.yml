@@ -1,6 +1,6 @@
 services:
   dev_container:
-    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    image: mcr.microsoft.com/devcontainers/java:21
     command: "sleep infinity"
     network_mode: service:mysql
     volumes:
