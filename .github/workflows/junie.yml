@@ -1,5 +1,3 @@
-# check-updates: false
-
 name: Junie
 run-name: Junie run ${{ inputs.run_id }}
 
